@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Your Name</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/theme.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="../index.html">Your Name</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="../index.html">About</a></li>
+        <li><a href="index.html" class="active">Research</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+        <li><a href="../cv/index.html">CV</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+        <span class="toggle-icon">☾</span>
+        <span class="toggle-label">Dark</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+  <h1>Research</h1>
+
+  <p style="color:var(--muted); font-size:0.9rem; margin-bottom:2.5rem;">
+    An overview of my research interests and key results.
+  </p>
+
+  <div class="research-grid">
+
+    <div class="research-card">
+      <div class="research-img">Image / Figure<br>[Add your figure here]</div>
+      <div class="research-body">
+        <h3>Research Area One</h3>
+        <p>
+          Describe this research area in 2–4 sentences. What is the core question?
+          What methods or data do you use? What are the key results or implications?
+        </p>
+        <div class="research-papers">
+          Key papers:
+          <a href="#">Author et al. 2026</a>,
+          <a href="#">Your Name 2025</a>,
+          <a href="#">Collaborator &amp; Your Name 2024</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-card">
+      <div class="research-img">Image / Figure<br>[Add your figure here]</div>
+      <div class="research-body">
+        <h3>Research Area Two</h3>
+        <p>
+          Describe this research area. What theoretical or empirical tools does
+          it rely on? How does it connect to your broader research agenda?
+        </p>
+        <div class="research-papers">
+          Key papers:
+          <a href="#">Your Name 2025</a>,
+          <a href="#">Your Name &amp; Collaborator 2024</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-card">
+      <div class="research-img">Image / Figure<br>[Add your figure here]</div>
+      <div class="research-body">
+        <h3>Research Area Three</h3>
+        <p>
+          Describe this research area. You might explain why this problem matters,
+          what prior work existed, and what your contribution advances.
+        </p>
+        <div class="research-papers">
+          Key papers:
+          <a href="#">Your Name et al. 2024</a>,
+          <a href="#">Your Name 2023</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-card">
+      <div class="research-img">Image / Figure<br>[Add your figure here]</div>
+      <div class="research-body">
+        <h3>Research Area Four</h3>
+        <p>
+          Describe this research area. If more methodological, explain the technique
+          you developed and where it has been applied.
+        </p>
+        <div class="research-papers">
+          Key papers:
+          <a href="#">Collaborator &amp; Your Name 2023</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Your Name &mdash; Hosted on
+    <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.
+  </p>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>

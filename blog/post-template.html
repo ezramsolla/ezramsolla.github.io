@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Title | Your Name</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/theme.js"></script>
+  <style>
+    .post-header { margin-bottom: 2.5rem; }
+    .post-header h1 { margin-bottom: 0.5rem; }
+    .post-meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .post-body {
+      max-width: 660px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .post-body p { margin-bottom: 1.3rem; }
+    .post-body h2 { font-size: 1.3rem; margin: 2rem 0 0.75rem; }
+    .post-body h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 0.5rem 0 0.5rem 1.2rem;
+      margin: 1.5rem 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .post-body code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.88rem;
+      background: var(--tag-bg);
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      color: var(--text);
+    }
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 2.5rem;
+      text-decoration: none;
+    }
+    .post-back:hover { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="../index.html">Your Name</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="../index.html">About</a></li>
+        <li><a href="../research/index.html">Research</a></li>
+        <li><a href="index.html" class="active">Blog</a></li>
+        <li><a href="../cv/index.html">CV</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme">
+        <span class="toggle-icon">☾</span>
+        <span class="toggle-label">Dark</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+  <a class="post-back" href="index.html">← All posts</a>
+
+  <div class="post-header">
+    <h1>Your Blog Post Title</h1>
+    <div class="post-meta">
+      <span>May 2026</span>
+      <span class="blog-tag" style="margin:0;">Research</span>
+      <span class="blog-tag" style="margin:0;">Methods</span>
+    </div>
+  </div>
+
+  <div class="post-body">
+    <p>
+      This is the opening paragraph of your blog post. Write naturally — this is your space
+      to explore ideas at length, explain something you've been thinking about, or share
+      a perspective on your field.
+    </p>
+
+    <h2>A Section Heading</h2>
+    <p>
+      You can structure longer posts with headings. Keep paragraphs focused — one idea
+      per paragraph works well for web reading.
+    </p>
+    <p>
+      You can reference inline <code>code</code> or equations, link to
+      <a href="#">papers</a>, or quote other work:
+    </p>
+
+    <blockquote>
+      A relevant quote or observation that you're responding to or building on.
+    </blockquote>
+
+    <p>
+      Continue the post. Add as many sections and paragraphs as needed. When you're done,
+      duplicate this file for each new post and update the title, date, and content.
+    </p>
+
+    <h2>Another Section</h2>
+    <p>
+      More content here. To add a new post, copy this file, rename it
+      (e.g. <code>my-new-post.html</code>), update the content, and add a link to it
+      in <code>blog/index.html</code>.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Your Name &mdash; Hosted on
+    <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.
+  </p>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
